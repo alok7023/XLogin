@@ -28,30 +28,26 @@ function App() {
         <form onSubmit={handleSubmit}>
           <div className="inputField">
             {error && <p>{error}</p>}
-            <label htmlFor="username">
-              Username:
-              <input
-                type="text"
-                placeholder="username"
-                id="username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                required
-              />
-            </label>
+            <label htmlFor="username">Username:</label>
+            <input
+              type="text"
+              placeholder="username"
+              id="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+            />
           </div>
           <div className="inputField">
-            <label htmlFor="password">
-              Password:
-              <input
-                type="password"
-                placeholder="password"
-                id="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </label>
+            <label htmlFor="password">Password:</label>
+            <input
+              type="password"
+              placeholder="password"
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
           </div>
           <button type="submit" className="submitBtn">
             Submit
