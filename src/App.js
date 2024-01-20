@@ -22,7 +22,7 @@ function App() {
       <h1>Login Page</h1>
       {isSubmitted ? (
         <div>
-          <p>Welcome, user!</p>
+          <p>Welcome, {username}!</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
